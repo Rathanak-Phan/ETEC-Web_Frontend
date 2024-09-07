@@ -1,0 +1,541 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+:root{
+    --bg-haeder: rgb(54, 102, 54);
+    --bg-color: rgb(255, 255, 255);
+    --bg-button-search: rgb(233, 233, 242);
+    --theme-color: rgb(25, 36, 25);
+    --font-style: "Outfit";
+    --title-font-size: 20px;
+}
+
+body{
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* header */
+.head{
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--bg-haeder);
+    display: flex;
+    justify-content: space-between;
+}
+.head .toolbar{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head .toolbar .menu{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    margin-inline: 30px;
+    text-decoration: none;
+    font-size: var(--title-font-size);
+    font-family: var(--font-style);
+    color: var(--bg-color);
+}
+
+/* Dropdown Styles */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    margin-inline: 30px;
+    text-decoration: none;
+    font-size: var(--title-font-size);
+    font-family: var(--font-style);
+    color: var(--bg-color);
+}
+
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 2;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.menu .dropdown .dropdown-content li {
+    padding: 10px;
+    list-style: none;
+    text-align: left;
+}
+
+.menu .dropdown .dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Additional Styling for header theme */
+.head .theme {
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.21);
+    border-radius: 20px;
+    background-color: var(--theme-color);
+    justify-content: center;
+}
+
+.head .theme p {
+    color: var(--bg-color);
+    align-self: center;
+    font-size: var(--title-font-size);
+}
+
+
+
+
+/* header theme */
+.head .theme{
+    width: 10%;
+    height: 70%;
+    display: flex;
+    align-self: center;
+    margin-right: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.21);
+    border-radius: 20px;
+    background-color: var(--theme-color);
+    justify-content: center;
+}
+.head .theme p{
+    color: var(--bg-color);
+    align-self: center; 
+    font-size: var(--title-font-size);
+}
+/* main header */
+.main-head-content{
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+}
+.main-head-content #A{
+    width: 10%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-haeder);
+    font-size: xx-large;
+    font-family: var(--font-style);
+}
+.main-head-content #B{
+    width: 60%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-head-content #B .box-search{
+    width: 60%;
+    height: 40%;
+    border: 2px solid rgb(196, 196, 204);
+    border-radius: 35px;
+    background-color: var(--bg-button-search);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+}
+#search-items{
+    font-size: var(--title-font-size);
+    border: none;
+}
+.box-search input{
+    outline: none;
+}
+/* first selection content */
+.first-main{
+    width: 99%;
+    height: 77vh;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+}
+.first-main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/Project-I/file/Ankor-wat.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 0.2;
+    top: 0;
+}
+.first-main .paragraph{
+    width: 35%;
+    height: 35vh;
+    /* background-color: white; */
+    position: relative;
+    margin-left: 50px;
+    padding: 20px;
+}
+.first-main .picture{
+    width: 45%;
+    height: 35vh;
+    /* background-color: rebeccapurple; */
+    position: relative;
+    margin-right: 30px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-main .paragraph :first-child{
+    font-size: 65px;
+    font-weight: 700;
+    font-family: var(--font-style);
+    color: rgb(64, 237, 205);
+    margin-bottom: 20px;
+}
+.first-main .paragraph {
+    font-family: var(--font-style);
+    font-size: var(--title-font-size);
+    color: rgb(63, 163, 235);
+    font-weight: 500;
+}
+button{
+    background-color: #ffffff; /* Background color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 10px 20px; /* Padding (top-bottom, left-right) */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    font-size: 20px; /* Font size */
+    font-weight: 600; /* Font weight */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Makes the button inline */
+    transition: background-color 0.3s ease; /* Smooth background-color transition */
+    margin-top: 30px;
+    margin-left: 400px;
+    font-family: var(--font-style);
+}
+button:hover{
+    background-color: var(--bg-haeder);
+}
+.first-main .picture .box-image{
+    width: 30%;
+    height: 100%;
+    /* background-color: red; */
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.first-main .picture #boxI::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/Project-I/file/design-I.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 1;
+}
+#boxI:hover {
+    box-shadow: 0px 0px 20px;
+    color: blueviolet;
+    height: 101%;
+    transition: 0.2s ease 0.3s;
+}
+.first-main .picture #boxII::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/Project-I/file/design-II.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 1;
+}
+#boxII:hover {
+    box-shadow: 0px 0px 20px;
+    color: blueviolet;
+    height: 101%;
+    transition: 0.2s ease 0.3s;
+}
+.first-main .picture #boxIII::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/Project-I/file/design-III.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 1;
+}
+#boxIII:hover {
+    box-shadow: 0px 0px 20px;
+    color: blueviolet;
+    height: 101%;
+    transition: 0.2s ease 0.3s;
+}
+.first-main{
+    width: 99%;
+    height: 77vh;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+}
+.first-main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('/Project-I/file/Ankor-wat.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    opacity: 0.2;
+    top: 0;
+}
+#title-content{
+    margin:60px auto;
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 50px;
+}
+.secend-main{
+    width: 99%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10px;
+    /* border-radius: 20px; */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+}
+.secend-main #feature{
+    width: 48%;
+    height: 100%;
+    padding: 40px;
+}
+.feature-image{
+    width: 100%;
+    height: 70%;
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.feature-text{
+    width: 100%;
+    height: 25%;
+    /* background-color: bisque; */
+    margin-top: 30PX;
+    padding: 20px;
+    font-family: var(--font-style);
+    font-size: x-large;
+}
+.feature-text :first-child{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.bar-button{
+    width: 100%;
+    height: 5vh;
+    /* background-color: black; */
+}
+.bar-button ul{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.bar-button ul li{
+    margin: 0px 50px;
+    border: 3px solid rgb(64, 165, 237);
+    color: rgb(64, 165, 237);
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: var(--font-style);
+    font-size: var(--title-font-size);
+    font-weight: 600;
+}
+
+.third-main{
+    width: 99%;
+    height: 50vh;
+    /* background-color: greenyellow; */
+    margin: 50px auto;
+    display: flex;
+    padding: 1%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.third-main #picture{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    margin-left: 25px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.third-main #picture::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(/Project-I/file/design5.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.third-main #picture:hover{
+    width: 31%;
+    height: 101%;
+    box-shadow: 0 0 30px blueviolet;
+}
+.third-main .move-arrow{
+    width: 98.5%;
+    height: 50%;
+    /* background-color: black; */
+    margin: 0px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    font-size: 50px;
+    align-items: center;
+    color: rgb(69, 133, 94);
+    z-index: 1;
+}
+
+.footer{
+    width: 99%;
+    height: 35vh;
+    background-color: rgb(64, 165, 237);
+    border-radius: 20px;
+    margin-top: 10vh;
+    margin-bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vh;
+}
+
+.footer .logo{
+    width: 25%;
+    height: 90%;
+    /* background-color: rebeccapurple; */
+    padding: 10px;
+}
+.footer .list{
+    width: 25%;
+    height: 90%;
+    /* background-color: rebeccapurple; */
+}
+.footer .social{
+    width: 25%;
+    height: 90%;
+    /* background-color: rebeccapurple; */
+}
+.footer .logo #head-logo{
+    font-size: 50px;
+    font-family: var(--font-style);
+    font-weight: 600;
+    padding-left: 20px;
+    color: var(--bg-color);
+}
+.footer .logo #main-logo{
+    font-size: 50px;
+    font-family: var(--font-style);
+    font-weight: 600;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 65px 20px;
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+.footer .list ul{
+    text-align: center;
+    list-style: none;
+    margin: 0px;
+    font-size: 40px;
+    font-family: var(--font-style);
+    font-weight: 500;
+    line-height: 2.5;
+    color: var(--bg-color);
+}
+
+.footer .social p{
+    text-align: center;
+    font-family: var(--font-style);
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--bg-color);
+}
+.footer .social .icon{
+    width: 100%;
+    height: 6vh;
+    /* background-color: red; */
+    margin-top: 3vh;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+.footer .social .icon #box{
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
